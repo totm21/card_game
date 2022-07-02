@@ -7,7 +7,7 @@
 int main()
 {
 
-    log_creat();
+    log_debug_print_flag_string(cz,"zheshishenm");
     system("pause");
     return 0;
 }

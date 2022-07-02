@@ -1,6 +1,6 @@
 #include"log.h"
-#include <process.h>
-#include <stdlib.h>
+#include<process.h>
+#include<stdlib.h>
 
 bool log_debug_print_char(char c)
 {
@@ -15,4 +15,12 @@ bool log_debug_print_string(char* str)
         log_debug_print_char(str[i]);
     }
     return true;
+}
+
+bool log_debug_print_flag_string(char* flag,char *str)
+{
+    if(flag==cz)
+    {
+        log_debug_print_string(str);
+    }
 }
