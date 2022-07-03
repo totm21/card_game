@@ -17,10 +17,16 @@ bool log_debug_print_string(char* str)
     return true;
 }
 
-bool log_debug_print_flag_string(char* flag,char *str)
+bool log_debug_print_flag_string(log_debug_flag flag,char *str)
 {
-    if(flag==cz)
+    switch(flag)
     {
-        log_debug_print_string(str);
+        case cz:
+            log_debug_print_string("cz | ");
+            log_debug_print_string(str);
+            break;
+        default:
+            return false;
     }
+    return true;
 }
